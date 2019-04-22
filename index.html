@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta charset="UTF-8">
+	<title>BIM紀錄</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="container">
+		<header>
+			<div class="bmi_LOGO">
+				<img src="assets/BMICLogo.png" alt="">
+			</div>
+			<div class="keyin">
+				<form action="">
+					<label for="height">身高 cm</label>
+					<input type="number" name="height" id="height" placeholder="請輸入身高" max="300" min="1">
+					<label for="weight">體重 Kg</label>
+					<input type="number" name="weight" id="weight" placeholder="請輸入體重" max="300" min="1">
+					<div class="seeResult">
+						<input type="submit" value="看結果">
+					</div>
+				</form>
+			</div>
+		</header>
+		<section>
+			<div class="result">
+				<h1>BMI</h1>
+				<ul class="result_list">
+					
+				</ul>
+			</div>
+		</section>
+		<footer>
+			<div class="f_img">
+				<img src="assets/BMICLogo.png" alt="">
+			</div>
+		</footer>
+	</div>
+</body>
+<script src="js/all.js"></script>
+</html>

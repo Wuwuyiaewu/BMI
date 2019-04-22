@@ -1,0 +1,138 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	background: #191919;
+}
+.container{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+/* 標頭 */
+header{
+	position: relative;
+	background: rgb(66,66,66);
+	height: 300px;
+}
+.bmi_LOGO{
+	position: absolute;
+	top: 92px;
+	left: 173px;
+}
+/* 輸入區 */
+.keyin{
+	width: 250px;
+	height: 300px;
+	
+	padding-top: 74px;
+	margin: 0 auto;
+}
+.keyin label,
+.keyin input{
+	display: inline-block;
+	font-size: 18px;
+	line-height: 21px;
+	padding-bottom: 7px;
+	color: #FFD366;
+}
+.keyin input{
+	width: 250px;
+	height: 40px;
+
+	padding: 8px 16px;
+	margin-bottom: 16px;
+	font-size: 24px;
+	line-height: 28px;
+
+	background: rgb(100,100,100);
+	border: 2px solid #FFD366;
+	border-radius: 10px;
+	outline: none;
+}
+.keyin input::placeholder{
+	color: rgb(177,177,177);
+}
+/* 看結果 */
+.seeResult{
+	position: absolute;
+	top: 92px;
+	left: 690px;
+}
+.seeResult input{
+	display: inline-block;
+	width: 120px;
+	height: 120px;
+
+	font-size: 24px;
+	font-weight: 900;
+	color: #424242;
+	border-radius: 50%;
+	background: #FFD366;
+}
+.seeResult input:hover{
+	box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+	cursor: pointer;
+}
+.seeResult input:active{
+	background: #DEA921;
+	box-shadow: none;
+}
+/* 存放區 */
+section{
+	background: #F5F5F5;
+}
+.result{
+	margin: 0 auto;
+	padding: 24px 0;
+	text-align: center;
+}
+.result_list  {
+	width: 624px;
+	
+	margin: auto;
+  	list-style-type: none;
+}
+.result_list li{
+	height: 62px;
+	
+	margin: 8px 0;
+  	padding: 21px 0;
+
+  	background-color: #ffffff;
+	overflow: hidden;
+}
+.color_1{background: #31BAF9;}
+.color_2{background: #86D73F;}
+.color_3{background: #FF982D;}
+.color_4{}
+.color_5{}
+.result_list tr td{
+	width: 20%;
+
+	padding-left: 20px;
+
+	font-size: 20px;
+	color: #4A4A4A;
+
+	overflow: hidden;
+}
+.result_list tr td span{
+	font-size: 12px;
+}
+/* 頁尾 */
+footer{
+	height: 90px;
+	background: #FFD366;
+	text-align: center;
+}
+footer .f_img{
+	padding:18px 0;
+}
+footer .f_img img{
+	display: inline-block;
+	width: 55px;
+	height: 55px;
+	
+	background: #000;
+}
