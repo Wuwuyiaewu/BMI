@@ -8,15 +8,12 @@ check_holder.addEventListener('click',del);
 posting(data);
 function counting(e) {
     e.preventDefault();
-    
+    if (hhh.value == "" || www.value == "") {alert("請輸入正確數字");return;}
 	var height = (hhh.value / 100) * (hhh.value / 100);
 	var weight = www.value;
 	var x = (weight / height);
 	x = x.toFixed(2);
 
-	console.log(weight);
-	console.log(height);
-	console.log(x);
 	var txt = {
 		BMI:x,
 		height:hhh.value,
@@ -37,7 +34,6 @@ function posting(data){
 		}else if (data[i].BMI > 18.5 && data[i].BMI <= 25) {
 			eva = "體重正常"
 			color = "color_2";
-
 		}else if (data[i].BMI > 25 && data[i].BMI <= 30){
 			eva = "體重過重"
 			color = "color_3";
