@@ -4,6 +4,7 @@ var hhh = document.querySelector('#height');
 var www = document.querySelector('#weight');
 var data = JSON.parse(localStorage.getItem('yourBMI')) || [];
 var check_holder = document.querySelector('.result_list');
+check_holder.addEventListener('click',del);
 posting(data);
 function counting(e) {
     e.preventDefault();
@@ -12,6 +13,7 @@ function counting(e) {
 	var weight = www.value;
 	var x = (weight / height);
 	x = x.toFixed(2);
+
 	console.log(weight);
 	console.log(height);
 	console.log(x);
@@ -69,17 +71,24 @@ function posting(data){
 						'</td>'+
 					'</tr>'+
 				'</table>'+
+				'<a href="#" class="lidel">'+
+				'<i data-num="'+i+'" class="fas fa-trash-alt"></i>'+
+				'</a>'+
 			'</li>'
 	}
 	check_holder.innerHTML = str;
 }
 function del(e){
-
+	if (e.target.nodeName !== 'I' && e.target.nodeName !== 'A') {console.log('不是A連結或I唷'); return;}
+		var index = e.target.dataset.num;
+		data.splice(index,1);
+		localStorage.setItem('yourBMI',JSON.stringify(data));
+		posting(data);
 }
 
 
 var con = document.querySelector('Body');
 con.addEventListener('click',searching);
 function searching(e){
-	console.log();
+	console.log(e.target.nodeName);
 }
