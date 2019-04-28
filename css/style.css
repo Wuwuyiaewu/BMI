@@ -54,29 +54,46 @@ header{
 	color: rgb(177,177,177);
 }
 /* 看結果 */
-.seeResult{
+.keyin .seeResult{
 	position: absolute;
 	top: 92px;
 	left: 690px;
 }
-.seeResult input{
+.keyin .postResult{
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	
+	background: #FFD366;
+	color: #424242;
+
+	margin: 0;
+	padding: 0;
+}
+.keyin .postResult:hover{
+	box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
+}
+.keyin .postResult:active{
+	background: #DEA921;
+	outline: none;
+	border: none;
+}
+.postResult_bmi{
+	display: none;
+}
+.postResult_bmi_act{
 	display: inline-block;
 	width: 120px;
 	height: 120px;
-
-	font-size: 24px;
-	font-weight: 900;
-	color: #424242;
 	border-radius: 50%;
-	background: #FFD366;
+	text-align: center;
 }
-.seeResult input:hover{
-	box-shadow: 0 1px 6px 3px rgba(255,195,49,0.64);
-	cursor: pointer;
+.postResult_bmi_act li:nth-child(1){
+	line-height: 60px;
+	font-size: 32px;
 }
-.seeResult input:active{
-	background: #DEA921;
-	box-shadow: none;
+.postResult_bmi_act li:nth-child(2){
+	font-size: 14px;
 }
 /* 存放區 */
 section{
@@ -146,6 +163,18 @@ section{
 }
 .result_list tr td span{
 	font-size: 12px;
+}
+.seeResult_reload{
+	position: absolute;
+	display: none;
+	top: 80px;
+	left: 90px;
+	color: #825613;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	line-height: 30px;
+	text-align: center;
 }
 /* 頁尾 */
 footer{

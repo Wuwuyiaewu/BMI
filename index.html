@@ -15,13 +15,19 @@
 				<img src="assets/BMICLogo.png" alt="">
 			</div>
 			<div class="keyin">
-				<form action="">
+				<form action="" class="generate">
 					<label for="height">身高 cm</label>
 					<input type="number" name="height" id="height" placeholder="請輸入身高" max="300" min="100">
 					<label for="weight">體重 Kg</label>
 					<input type="number" name="weight" id="weight" placeholder="請輸入體重" max="300" min="60">
 					<div class="seeResult">
-						<input type="submit" value="看結果">
+						<input type="submit" value="看結果" class="postResult">
+						<ul class="postResult_bmi">
+							<!-- 留著放資料 -->
+						</ul>
+						<a href="#" class="seeResult_reload">
+							<img src="assets/icons_loop.png" alt="">
+						</a>
 					</div>
 				</form>
 			</div>
