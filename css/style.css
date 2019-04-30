@@ -16,6 +16,9 @@
 *{
 	box-sizing: border-box;
 }
+html{
+	overflow-y: scroll;
+}
 body{
 	background: #191919;
 }
@@ -168,6 +171,16 @@ header{
 	cursor: pointer;
 
 }
+.keyInArea_reloadArea img{
+	-ms-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+	animation: rotate 3s infinite linear;
+}
+@keyframes rotate{
+	0%{}
+	100%{transform: rotate(360deg)}
+}
 /* $BMI等級評價	*/
 .howBmiLevel{
 	/* js更動項 */
@@ -192,6 +205,7 @@ header{
 section{
 	min-height: calc(100vh - 390px);
 	background: #F5F5F5;
+	overflow: hidden;
 }
 .mainSection{
 	font-size: 14px;
@@ -247,6 +261,8 @@ section{
 	color: #555;
 
 	margin: 0 auto;
+	margin-bottom: 16px;
+	padding-bottom: 16px;
 
 
 	background: rgba(255,255,255,0.5);
@@ -264,6 +280,13 @@ section{
 	border-radius: 50%;
 	/* js更動項 */
 	background: ;
+}
+.BMIlist a{
+	color: #555;
+	text-decoration: none;
+}
+.BMIlist a:hover{
+	color: red;
 }
 /* $標尾 */
 footer{
