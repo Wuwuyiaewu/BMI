@@ -6,8 +6,9 @@
 /*input提示顏色*/
 /*傳送資料按鈕 */
 /*按鈕切換*/
-/*BMI評價*/
+/*BMI等級評價*/
 /*內容表單*/
+/*表單桌面*/
 /*標尾*/
 /**/
 /**************************/
@@ -130,13 +131,24 @@ header{
 	display: block;
 	line-height: 38px;
 	font-size: 32px;
+	/* js更動項 */
 	color: #86D73F;
 }
 .keyInArea_submitArea_BMIresult span:nth-child(2){
 	display: block;
 	line-height: 17px;
 	font-size: 14px;
+	/* js更動項 */
 	color: #86D73F;
+}
+.keyInArea_submitArea_BMIresultOut{
+	display: block;
+	width: 64px;
+	position: absolute;
+	top: 48px;
+	left: 141px;
+
+	line-height: 32px;
 }
 /* 重新載入 */
 .keyInArea_reloadArea{
@@ -153,6 +165,7 @@ header{
 	border-radius: 50%;
 	/* js更動項 */
 	border: 3px solid #424242;
+	cursor: pointer;
 
 }
 /* $BMI等級評價	*/
@@ -169,6 +182,12 @@ header{
 	/* js更動項 */
 	color: #86D73E;
 }
+.BMILevel_1{background: #31BAF9 ;}
+.BMILevel_2{background: #86D73F ;}
+.BMILevel_3{background: #FF982D ;}
+.BMILevel_4{background: #FF6C02 ;}
+.BMILevel_5{background: #FF4C42 ;}
+.BMILevel_6{background: #FF1200 ;}
 /* $內容表單 */
 section{
 	min-height: calc(100vh - 390px);
@@ -217,17 +236,34 @@ section{
 .helper_math{
 	float: right;
 }
-/* 表單桌面 */
+/* $表單桌面 */
 .BMIlist{
 	width: 800px;
 	
+	text-align: center;
+	font-weight: 900;
+	font-size: 18px;
+	line-height: 24px;
+	color: #555;
+
 	margin: 0 auto;
+
+
 	background: rgba(255,255,255,0.5);
 	box-shadow: 0px 0px 1px #FFD366;
 	border: 3px solid #fff;
 }
-.BMIlist tr,.BMIlist th,.BMIlist td{
+.BMIlist_inner tr,.BMIlist_inner th,.BMIlist_inner td{
 	border: 3px solid #fff;
+}
+.tablebody tr span{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+
+	border-radius: 50%;
+	/* js更動項 */
+	background: ;
 }
 /* $標尾 */
 footer{

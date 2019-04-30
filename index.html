@@ -26,8 +26,9 @@
 					<div class="keyInArea_submitArea_BMIresult">
 						<span>22.22</span>
 						<span>BMI</span>
+						<span class="keyInArea_submitArea_BMIresultOut"></span>
 					</div>
-					<div class="keyInArea_reloadArea">
+					<div class="keyInArea_reloadArea" href="#">
 						<img src="assets/icons_loop.png" alt="">
 					</div>
 				</div>
@@ -53,28 +54,32 @@
 		</div>
 			
 		<table class="BMIlist">
-			<tr>
-				<th>警示燈號</th>
-				<th>BMI</th>
-				<th>身高</th>
-				<th>體重</th>
-				<th>測量日期</th>
-				<th>清除資料</th>
-			</tr>
-			<tr data-num='1'>
-				<td>
-					<span></span>
-				</td>
-				<td>
-					20
-				</td>
-				<td>
-					166
-				</td>
-				<td>66</td>
-				<td>108/4/29</td>
-				<td><i class="fas fa-trash-alt"></i></td>
-			</tr>
+			<thead>
+				<tr>
+					<th>警示燈號</th>
+					<th>BMI</th>
+					<th>身高</th>
+					<th>體重</th>
+					<th>測量日期</th>
+					<th>清除資料</th>
+				</tr>
+			</thead>
+			<tbody class="tablebody">
+				<tr data-num='1'>
+					<td>
+						<span></span>
+					</td>
+					<td>
+						20
+					</td>
+					<td>
+						166
+					</td>
+					<td>66</td>
+					<td>108/4/29</td>
+					<td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+				</tr>
+			</tbody>
 		</table>
 
 		</section>
